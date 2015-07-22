@@ -1,0 +1,5 @@
+<module>
+    <!-- Inherit the default widget set -->
+    <inherits name="com.vaadin.DefaultWidgetSet" />
+
+</module>

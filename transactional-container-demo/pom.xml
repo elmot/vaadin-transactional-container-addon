@@ -3,17 +3,17 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.vaaadin</groupId>
+    <groupId>org.vaaadin</groupId>
     <artifactId>transactional-container-demo</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
 	<packaging>war</packaging>
 	<name>Transactional Container Add-on Demo</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<vaadin.version>7.5.1</vaadin.version>
-        <vaadin.plugin.version>7.5.1</vaadin.plugin.version>
+		<vaadin.version>7.5.4</vaadin.version>
+        <vaadin.plugin.version>${vaadin.version}</vaadin.plugin.version>
     </properties>
 
     <!--     
@@ -87,9 +87,9 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.vaaadin</groupId>
+			<groupId>org.vaaadin</groupId>
 			<artifactId>transactional-container</artifactId>
-			<version>${version}</version>
+			<version>${project.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.vaadin</groupId>

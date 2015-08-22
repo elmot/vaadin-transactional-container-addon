@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.vaadin.data.tx;
+package org.vaadin.data.tx;
 
 import org.junit.Before;
 import org.junit.Test;

@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.vaadin.data.tx;
+package org.vaadin.data.tx;
 
 import com.vaadin.data.Property;
 import org.junit.Before;
@@ -25,7 +25,6 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-import static com.vaadin.data.tx.ContainerTestUtils.newFilledContainer;
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotSame;
 import static junit.framework.Assert.assertNull;
@@ -49,8 +48,8 @@ public class TestTxOperations {
 
     @Before
     public void setUp() {
-        fullContainer = newFilledContainer();
-        backedContainer = newFilledContainer();
+        fullContainer = ContainerTestUtils.newFilledContainer();
+        backedContainer = ContainerTestUtils.newFilledContainer();
         countingListener = new UniversalCountingListener();
         backedContainer.addItemSetChangeListener(countingListener);
         Property containerProperty = backedContainer.getContainerProperty(backedContainer.getIdByIndex(0), TEST_PROPERTY_ID);

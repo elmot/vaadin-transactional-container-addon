@@ -1,4 +1,4 @@
-package com.vaadin.data.tx.demo.domain;
+package org.vaadin.data.tx.demo.domain;
 
 import java.io.Serializable;
 import java.util.Date;

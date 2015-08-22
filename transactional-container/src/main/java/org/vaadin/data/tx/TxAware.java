@@ -1,4 +1,4 @@
-package com.vaadin.data.tx;
+package org.vaadin.data.tx;
 
 import java.io.Serializable;
 

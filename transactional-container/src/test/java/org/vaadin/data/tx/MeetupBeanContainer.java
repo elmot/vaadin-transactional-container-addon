@@ -13,10 +13,10 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.vaadin.data.tx;
+package org.vaadin.data.tx;
 
 import com.vaadin.data.Item;
-import com.vaadin.data.tx.domain.Meetup;
+import org.vaadin.data.tx.domain.Meetup;
 import com.vaadin.data.util.BeanContainer;
 import com.vaadin.data.util.BeanItem;
 

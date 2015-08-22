@@ -1,15 +1,15 @@
-package com.vaadin.data.tx.demo;
+package org.vaadin.data.tx.demo;
 
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.annotations.Widgetset;
 import com.vaadin.data.Container;
 import com.vaadin.data.Item;
-import com.vaadin.data.tx.ItemGenerator;
-import com.vaadin.data.tx.TransactionalContainerWrapper;
-import com.vaadin.data.tx.TxListener;
-import com.vaadin.data.tx.demo.domain.Status;
-import com.vaadin.data.tx.demo.domain.Ticket;
+import org.vaadin.data.tx.ItemGenerator;
+import org.vaadin.data.tx.TransactionalContainerWrapper;
+import org.vaadin.data.tx.TxListener;
+import org.vaadin.data.tx.demo.domain.Status;
+import org.vaadin.data.tx.demo.domain.Ticket;
 import com.vaadin.data.util.BeanContainer;
 import com.vaadin.data.util.BeanItem;
 import com.vaadin.data.util.converter.StringToBooleanConverter;
@@ -34,6 +34,8 @@ import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.VerticalSplitPanel;
 import com.vaadin.ui.renderers.HtmlRenderer;
 import com.vaadin.ui.themes.ValoTheme;
+import org.vaadin.data.tx.demo.domain.Status;
+import org.vaadin.data.tx.demo.domain.Ticket;
 
 import javax.servlet.annotation.WebServlet;
 import java.util.ArrayList;
@@ -42,7 +44,7 @@ import java.util.Date;
 import java.util.List;
 
 @Theme("valo")
-@Widgetset("com.vaadin.data.tx.demo.DemoWidgetset")
+@Widgetset("org.vaadin.data.tx.demo.DemoWidgetset")
 public class MyUI extends UI {
 
     private long idCounter = 10000;

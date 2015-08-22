@@ -1,4 +1,4 @@
-package com.vaadin.data.tx;
+package org.vaadin.data.tx;
 
 import com.vaadin.data.Item;
 

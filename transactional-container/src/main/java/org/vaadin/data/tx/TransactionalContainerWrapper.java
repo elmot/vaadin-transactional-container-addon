@@ -1,4 +1,4 @@
-package com.vaadin.data.tx;
+package org.vaadin.data.tx;
 
 import com.vaadin.data.Container;
 import com.vaadin.data.Item;
@@ -18,10 +18,10 @@ import java.util.Map;
  * TransactionalContainerWrapper is a Vaadin Container which wraps around another container to provide transactional commits and
  * rollbacks for item set and property value changes. TransactionalContainerWrapper supports sorting and filtering, and it assumes
  * that the underlying container implements the {@link Indexed} interface.
- * <p/>
+ * <p>
  * You may start a transaction explicitly by callind startTransaction() - the other option is to use implicit
  * transaction start by adding or removing an item or by modifying any property value.
- * <p/>
+ * </p>
  * Transaction should be finalized by calling either commit() to apply the changes to the underlying container, or
  * rollback() to discard the changes and re-sync with the underlying container.
  */

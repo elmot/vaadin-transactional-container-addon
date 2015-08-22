@@ -13,11 +13,11 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.vaadin.data.tx;
+package org.vaadin.data.tx;
 
 import com.vaadin.data.Container;
 import com.vaadin.data.Item;
-import com.vaadin.data.tx.domain.Location;
+import org.vaadin.data.tx.domain.Location;
 import org.apache.commons.collections.CollectionUtils;
 
 import java.util.Collection;

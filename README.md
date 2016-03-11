@@ -15,7 +15,7 @@ Official releases of this add-on are available at Vaadin Directory. For Maven in
 
 git clone https://github.com/el-mot/vaadin-transactional-container-addon
 mvn clean install
-cd demo
+cd transactional-container-demo
 mvn jetty:run
 
 To see the demo, navigate to http://localhost:8080/
@@ -29,9 +29,11 @@ Pre-compiling a theme eliminates automatic theme updates at runtime - see below 
 
 ## Release notes
 
-### Version 1.0-SNAPSHOT
+### Version 1.0.1
 
-*TBD*
+- Commons-collections upgraded to 3.2.2
+- Vaadin upgraded to 7.6.4
+- Grid Unbuffered Mode
 
 ## Issue tracking
 

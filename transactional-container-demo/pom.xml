@@ -5,35 +5,34 @@
 
     <groupId>org.vaaadin</groupId>
     <artifactId>transactional-container-demo</artifactId>
-    <version>1.0</version>
+	<version>1.0.1</version>
 
 	<packaging>war</packaging>
 	<name>Transactional Container Add-on Demo</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<vaadin.version>7.5.4</vaadin.version>
+		<vaadin.version>7.6.4</vaadin.version>
         <vaadin.plugin.version>${vaadin.version}</vaadin.plugin.version>
     </properties>
 
-    <!--     
 	<organization>
-		<name>My Name</name>
-		<url>https://github.com/mygithubaccount/MyComponent/</url>
+		<name>Vaadin.com</name>
+		<url>https://github.com/elmot/vaadin-transactional-container-addon</url>
 	</organization>
-    
+
 	<scm>
-		<url>git://github.com/mygithubaccount/MyComponent.git</url>
-		<connection>scm:git:git://github.com/mygithubaccount/MyComponent.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com:/mygithubaccount/${ComponentClassName}.git</developerConnection>
-		<tag>MyComponent add-on for Vaadin</tag>
+		<url>git://github.com/elmot/vaadin-transactional-container-addon.git</url>
+		<connection>scm:git:git://github.com/elmot/vaadin-transactional-container-addon.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com:/elmot/vaadin-transactional-container-addon.git
+		</developerConnection>
+		<tag>Transactional-aware container for Vaadin Grid</tag>
 	</scm>
 
 	<issueManagement>
 		<system>GitHub</system>
-		<url>https://github.com/mygithubaccount/MyComponent/issues</url>
+		<url>https://github.com/elmot/vaadin-transactional-container-addon/issues</url>
 	</issueManagement>
-    -->
 
 	<licenses>
 		<license>
@@ -97,7 +96,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.vaadin</groupId>
-			<artifactId>vaadin-client-compiler</artifactId>
+			<artifactId>vaadin-client-compiled</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.vaadin</groupId>
@@ -182,8 +181,8 @@
 						</configuration>
 						<goals>
 							<goal>resources</goal>
-							<goal>update-widgetset</goal>
-							<goal>compile</goal>
+							<!--<goal>update-widgetset</goal>-->
+							<!--<goal>compile</goal>-->
 						</goals>
 					</execution>
 				</executions>

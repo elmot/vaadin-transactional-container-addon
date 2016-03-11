@@ -126,6 +126,7 @@ public class TestTxOperations {
 
     }
 
+    @SuppressWarnings("unchecked")
     @Test
     public void testModification() {
         Object oldItemId = transactionalContainer.firstItemId();

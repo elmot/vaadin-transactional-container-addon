@@ -17,8 +17,8 @@ package org.vaadin.data.tx;
 
 import com.vaadin.data.Container;
 import com.vaadin.data.Item;
-import org.vaadin.data.tx.domain.Location;
 import org.apache.commons.collections.CollectionUtils;
+import org.vaadin.data.tx.domain.Location;
 
 import java.util.Collection;
 import java.util.Date;
@@ -46,6 +46,8 @@ class ContainerTestUtils {
         newItemToContainer(container, -22, "M -2x", 300000000L, 200, 60, 30);
         newItemToContainer(container, -27, "M -2x", 300000000L, 200, 60, 30);
     }
+
+    @SuppressWarnings("unchecked")
     public static void newItemToContainer(Container.Indexed container, long id, String description, long when,
             double altitude, double latitude, double longitude) {
         Item item = container.addItemAt(container.size(), id);
